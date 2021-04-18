@@ -1,0 +1,237 @@
+/******************************General*/
+*{/*Styles for all elements*/
+	margin: 0;/*Remove external margins*/
+	padding: 0;/*Remove internal margins*/
+	box-sizing: border-box;/*Correct use of the percentage ratio*/
+}
+.clear{/*Remove the flow around*/
+	clear: both;
+}
+a{
+	text-decoration: none;/*Remove basic styles for links*/
+}
+a:hover{
+	opacity: 0.85;/*When you hover over the link, transparency appears*/
+}
+#container{/*Block of the all website*/
+	width: 100%;
+	margin: 0 auto;/*Margins at the top and bottom are 0, left and right centered*/
+}
+/**************************TOP PAGE*/
+#top_page{
+	width: 100%;
+	background-color: #CDE2FF;
+}
+#back_one{/*Picture background for the top page*/
+	background: url(../img/back1.png) left bottom no-repeat;/*Way to the image, the position from the bottom left, and no repetitions*/
+	background-size: 100%;/*Stretch to width*/
+	padding-bottom: 550px;/*Internal indent*/
+}
+#top_menu>ul{
+	text-align: center;/*Menu list centered*/
+}
+#top_menu>ul>li{/*Styles for each list item*/
+	font-size: 48pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;/*make all letters big*/
+	color: #F96970;
+	display: inline-block;/*convert to lowercase blocks*/
+	margin: 40px 70px 100px 70px;/*external margins top 40, right 70, bottom 100, left 70*/
+}
+#top_menu>ul>li>a{
+	color: #F96970;/*color of list item links*/
+}
+#logo{
+	font-size: 85pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;
+	color: #15478A;
+	text-align: center;
+	margin: 0 auto;/*The outer margin on the top is 0, on the left and on the right is auto, so center by width*/
+}
+.top_button{
+	margin: 110px auto 140px auto;
+	text-align: center;
+}
+.top_button button{/*Button styles*/
+	font-size: 48pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;
+	color: #15478A;
+	background-color: #F96970;
+	padding: 20px 50px;/*internal margins for the button, top and bottom 20px, left and right 50px*/
+	border: 0;/*Remove border*/
+}
+#top_text{
+	font-size: 24pt;
+	font-family: Impact, serif;
+	border: 10px solid #F96970;/*frame, width solid color*/
+	text-transform: uppercase;
+	width: 57%;
+	margin: 0 auto;
+	color: #15478A;
+	padding: 45px 2px;
+	line-height: 60px;/*line spacing*/
+	text-align: center;
+	margin-top: 30px;
+}
+/*************************Second Button*/
+.two_button{
+	margin: 60px auto 60px auto;
+	text-align: center;
+}
+.two_button button{
+	font-size: 48pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;
+	color: #F96970;
+	background-color: #15478A;
+	padding: 20px 50px;
+	border: 0;
+}
+/*************************Description block*/
+.rev_block{/*A whole block with a picture, title, and texts*/
+	width: 65%;
+	margin: 0 auto;
+}
+.back_one_block{
+	background-color: #CDE2FF;
+	padding: 30px 0;
+}
+.back_two_block{
+	background-color: #81B5D5;
+	padding: 30px 0;
+}
+.rev_left{/*Left block*/
+	float: left;
+	width: 50%;
+}
+.rev_left img{
+	width: 100%;/*stretch the image to the full width of the block*/
+	padding: 30px;
+}
+.rev_right{/*Right block*/
+	float: right;
+	width: 40%;
+}
+h5{
+	font-size: 46pt;
+	color: #F96970;
+	font-family: Impact, serif;
+	text-align: center;
+}
+.rev_right p{
+	font-size: 34pt;
+	color: #15478A;
+	font-family: 'Baloo 2';/*online font*/
+	text-align: center;
+	margin-top: 10px;
+	line-height: 50px;
+}
+/********************Contact form*/
+#contact_page{
+	width: 100%;
+	background-color: #CDE2FF;
+}
+#back_two{
+	background: url(../img/back2.png) left bottom no-repeat;
+	background-size: 100%;
+	padding-bottom: 300px;
+}
+#forma{
+	margin: 0 auto;
+	text-align: center;
+}
+#name{
+	width: 50%;
+	background-color: #F96970;
+	height: 50px;
+	font-size: 30px;
+	font-family: Impact, serif;
+	color: #15478A;
+	margin-bottom: 30px;
+	margin-top: 200px;
+}
+#email{
+	width: 50%;
+	background-color: #15478A;
+	height: 50px;
+	font-size: 30px;
+	font-family: Impact, serif;
+	color: white;
+	margin-bottom: 30px;
+}
+textarea{
+	width: 50%;
+	background-color: #F96970;
+	height: 350px;
+	font-size: 30px;
+	font-family: Impact, serif;
+	color: #15478A;
+}
+/***********Additional pages*/
+#container_more{
+	width: 50%;
+	margin: 0 auto;
+}
+#container_more img{
+	width: 100%;
+}
+#one_p{
+	font-size: 24pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;
+	color: #15478A;
+	line-height: 60px;
+	text-align: center;
+	margin-top: 30px;
+}
+#two_p{
+	font-size: 24pt;
+	font-family: Impact, serif;
+	text-transform: uppercase;
+	color: #F96970;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 30px;
+}
+iframe{/*Youtube video settings*/
+	margin: 100px auto;
+	width: 100%;
+	height: 375px;
+}
+@media screen and (max-width: 600px) {/*changed styles for screen sizes smaller than 600px*/
+  li>a{
+  	font-size: 24pt;
+  }
+  h5{
+  	font-size: 23pt;
+  }
+  #logo{
+  	font-size: 42pt;
+  }
+  p{
+  	font-size: 12pt;
+  	line-height: 20px;
+  }
+  p>a{
+  	font-size: 12pt;
+  	line-height: 20px;
+  }
+  .rev_left{
+  	width: 100%;
+  }
+  .rev_right{
+  	width: 100%;
+  }
+  .top_button button, .two_button button{
+  	font-size: 24pt;
+  	padding: 10px 25px;
+  }
+  #container_more{
+  	width: 90%;
+  }
+  textarea{
+  	height: 250px;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html><!--create html file-->
+<html lang="en"><!--html tag, set english language-->
+<head><!--main scripts+js-->
+	<meta charset="UTF-8"><!--page encoding-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--for mobilephones-->
+	<title>Moscow visitor</title><!--title =)-->
+	<link rel="stylesheet" href="css/style.css"><!--add style.css-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"><!--add phont Baloo2-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><!--add jquery library-->
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#top_menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script><!--script for smooth movement of anchors from the menu, used jquery-->
+<script language="JavaScript">
+	var h=(new Date()).getHours();
+	if (h > 23 || h <7) alert('Good night!') ;
+	if (h > 6 && h < 12) alert('Good morning!');
+	if (h > 11 && h < 19) alert('Hello!');
+	if (h > 18 && h < 24) alert('Good evening!');
+</script><!--hello script-->
+</head>
+<body><!--all what website show is in body-->
+<div id="container"><!--The container is written to the width of the site, and the centering is based on the width-->
+<section id="top_page">
+	<div id="back_one">
+		<div id="top_menu">
+			<ul><!--meny list-->
+				<li><a href="#about">about</a></li><!--Menu list item, with anchor link-->
+				<li><a href="#reviews">reviews</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+			<div id="logo"><!--LOGO-->
+				moscow visitor
+			</div>
+			<div class="top_button">
+				<div id="about"></div><!--Anchor for the link--><button>about</button><!--button-->
+			</div>
+			<div id="top_text">
+				<p>If you do not know what to visit before your trip to Moscow, then we<br> are happy to help you. We have prepared for you the most<br>
+	interesting places that will definitely interest you, so that you can<br> get to know the Russian culture and architecture better.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="two_button">
+	<div id="reviews"></div><button>reviews</button>
+</div>
+<section>
+	<div class="back_one_block"><!--Background of a single block-->
+		<div class="rev_block"><!--all block-->
+			<div class="rev_left"><!--The left part, the percentage of 50 is recorded-->
+				<a href="img/1strev.jpg"><img src="img/1strev.jpg"></a><!--link to the image so you can view the enlarged version-->
+			</div>
+			<div class="rev_right"><!--Right block, 40%-->
+				<h5>TSARITSYNO PARK</h5><!--Title-->
+				<p><a href="1.html">Monument of Russian Gothic architecture, built in the 18th century by order of Catherine II.</a></p><!--Text with a link to go to another page-->
+			</div>
+			<div class="clear"></div><!--So that the blocks are not wiped off-->
+		</div>
+	</div>
+	<div class="back_two_block">
+		<div class="rev_block">
+			<div class="rev_left">
+				<a href="img/2ndrev.jpg"><img src="img/2ndrev.jpg"></a>
+			</div>
+			<div class="rev_right">
+				<h5>VDNHK</h5>
+				<p><a href="2.html">The former exhibition center of the entire USSR, now one of the most beautiful places in Moscow for walking and recreation.</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="back_one_block">
+		<div class="rev_block">
+			<div class="rev_left">
+				<a href="img/3rdrev.jpg"><img src="img/3rdrev.jpg"></a>
+			</div>
+			<div class="rev_right">
+				<h5>MOSCOW-CITY</h5>
+				<p><a href="3.html">Moscow International Business Center, with an observation deck, shopping center and beautiful views.</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<div class="top_button">
+	<div id="contact"></div><button>contact</button>
+</div>
+<section id="contact_page">
+	<div id="back_two">
+		<div id="forma"><!--Contact form block-->
+			<form>
+				<input type="text" placeholder="Name" id="name"><!--Name entry form-->
+				<input type="email" placeholder="Email" id="email"><!--email entry form-->
+				<textarea placeholder="Message"></textarea><!--text entry form-->
+				<div class="two_button">
+					<button>submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+</div>
+</body>
+</html>
